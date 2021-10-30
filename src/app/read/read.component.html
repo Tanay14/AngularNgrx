@@ -1,0 +1,11 @@
+<div class="right" *ngIf = "tutorial">
+<h3>Tutorial</h3>
+<ul>
+
+    <li *ngFor="let tt of tutorial | async" >
+        <a [href]="tt.url" target="_blank"> {{tt.name}}</a>
+    </li>  
+</ul>
+
+
+</div>
